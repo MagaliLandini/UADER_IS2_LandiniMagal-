@@ -15,14 +15,21 @@ def factorial(num):
         
     else: 
         fact = 1
-        while(num > 1): 
+        while(num >= 1): 
             fact *= num 
             num -= 1
-        return fact 
+        return(fact)  
+         
+        
 #Se le cambio la igualdad a 1 para que muestre el mensaje
 if len(sys.argv) == 1:
    print("Debe informar un número!")
    sys.exit()
-num=int(sys.argv[1])
-print("Factorial ",num,"! es ", factorial(num)) 
+else:
+    num=int(sys.argv[1])
+    num2=int(sys.argv[2])
+
+#Se agrego un ciclo for para que devuelva los factoriales entre dos rangos
+for i in range (num, num2 +1):
+    print("Factorial ",i,"! es ", factorial(i)) 
 
