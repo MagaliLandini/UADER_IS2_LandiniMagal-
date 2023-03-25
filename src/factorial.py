@@ -27,14 +27,14 @@ if len(sys.argv) == 1:
    print("Debe informar un número!")
    sys.exit()
 else:
-#El condicional IF evalua el rango maximo que puede ingresar el usuario
+#El condicional IF evalua que no se ingresen valores negativos
     num=int(sys.argv[1])
-    if(num > 60):
-        print("Debe ingresar un número menor a 60")
+    if(num < 0):
+        print("Debe ingresar un número mayor a 1")
         sys.exit
    
 
 #Se agrego un ciclo for para que devuelva los factoriales entre dos rangos
-for i in range (num, 60 +1):
+for i in range (1, num + 1):
     print("Factorial ",i,"! es ", factorial(i)) 
 
