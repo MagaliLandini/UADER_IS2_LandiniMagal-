@@ -22,14 +22,19 @@ def factorial(num):
          
         
 #Se le cambio la igualdad a 1 para que muestre el mensaje
+
 if len(sys.argv) == 1:
    print("Debe informar un número!")
    sys.exit()
 else:
+#El condicional IF evalua el rango maximo que puede ingresar el usuario
     num=int(sys.argv[1])
-    num2=int(sys.argv[2])
+    if(num > 60):
+        print("Debe ingresar un número menor a 60")
+        sys.exit
+   
 
 #Se agrego un ciclo for para que devuelva los factoriales entre dos rangos
-for i in range (num, num2 +1):
+for i in range (num, 60 +1):
     print("Factorial ",i,"! es ", factorial(i)) 
 
