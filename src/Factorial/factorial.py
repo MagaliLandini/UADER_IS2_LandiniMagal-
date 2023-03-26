@@ -34,5 +34,5 @@ else:
 
 #Se agrego un ciclo for para que devuelva los factoriales entre dos rangos
 
-for i in range (1, num + 1):
+for i in range (num, 61):
     print("Factorial ",i,"! es ", factorial(i)) 
