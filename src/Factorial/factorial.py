@@ -24,6 +24,12 @@ def factorial(num):
 if len(sys.argv) == 1:
    print("Debe informar un número!")
    sys.exit()
-num=int(sys.argv[1])
-print("Factorial ",num,"! es ", factorial(num)) 
+else:
+    num=int(sys.argv[1])
+    num2=int(sys.argv[2])
 
+
+
+#Se agrego un ciclo for para que devuelva los factoriales entre dos rangos
+for i in range (num, num2 + 1):
+    print("Factorial ",i,"! es ", factorial(i)) 
