@@ -25,11 +25,14 @@ if len(sys.argv) == 1:
    print("Debe informar un número!")
    sys.exit()
 else:
+#El condicional IF evalua que no se ingresen valores negativos
     num=int(sys.argv[1])
-    num2=int(sys.argv[2])
-
-
+    if(num < 0):
+        print("Debe ingresar un número mayor a 1")
+        sys.exit
+   
 
 #Se agrego un ciclo for para que devuelva los factoriales entre dos rangos
-for i in range (num, num2 + 1):
+
+for i in range (1, num + 1):
     print("Factorial ",i,"! es ", factorial(i)) 
